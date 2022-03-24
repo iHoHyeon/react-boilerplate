@@ -14,7 +14,6 @@ function App() {
       <Suspense fallback={'loading...'}>
         <WebpackLogo />
       </Suspense>
-
       <h1>hello react</h1>
       <h1>mode: {process.env.NODE_ENV}</h1>
     </div>
