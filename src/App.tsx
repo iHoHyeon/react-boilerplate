@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { Suspense, lazy } from 'react';
 
-const WebpackLogo = lazy(() => import('@/components/webpackLogo'));
+const WebpackLogo = lazy(() => import('@/components/WebpackLogo'));
 
 function App() {
   return (
