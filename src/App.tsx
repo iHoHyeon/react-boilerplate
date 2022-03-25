@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import { Suspense, lazy } from 'react';
+import theme from '@/styles/theme';
 
 const WebpackLogo = lazy(() => import('@/components/WebpackLogo'));
 
@@ -9,6 +10,15 @@ function App() {
       css={css`
         width: max-content;
         margin: auto;
+        background-color: ${theme.mainColor};
+
+        ${theme.mediaQuery.mobile} {
+          background-color: #000;
+        }
+
+        ${theme.mediaQuery.tablet} {
+          background-color: gray;
+        }
       `}
     >
       <Suspense fallback={'loading...'}>
