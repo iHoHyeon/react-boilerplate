@@ -1,8 +1,9 @@
 import { css } from '@emotion/react';
 import { Suspense, lazy } from 'react';
-import theme from '@/styles/theme';
 
-const WebpackLogo = lazy(() => import('@/components/WebpackLogo'));
+import theme from './styles/theme';
+
+const WebpackLogo = lazy(() => import('@components/WebpackLogo'));
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
     >
       <Suspense fallback={'loading...'}>
         <WebpackLogo />
+        <h1>hello react</h1>
+        <h1>mode: {process.env.NODE_ENV}</h1>
       </Suspense>
-      <h1>hello react</h1>
-      <h1>mode: {process.env.NODE_ENV}</h1>
     </div>
   );
 }

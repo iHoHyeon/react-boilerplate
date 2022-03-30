@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-import WebpackLogoIcon from '@/images/webpack-logo.svg';
+import WebpackLogoIcon from '../images/webpackLogo.svg';
 
 function WebpackLogo() {
   return (

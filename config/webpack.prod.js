@@ -1,6 +1,7 @@
-const { merge } = require('webpack-merge');
 const path = require('path');
+
 const TerserJSPlugin = require('terser-webpack-plugin');
+const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;

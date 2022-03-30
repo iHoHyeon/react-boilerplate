@@ -1,11 +1,11 @@
+import { ThemeProvider } from '@emotion/react';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeProvider } from '@emotion/react';
 
 import App from './App';
-import GlobalStyle from '@/styles/GlobalStyle';
-import theme from '@/styles/theme';
+import GlobalStyle from './styles/GlobalStyle';
+import theme from './styles/theme';
 
 ReactDOM.render(
   <StrictMode>
