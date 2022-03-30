@@ -1,6 +1,6 @@
 {
+  "extends": "./tsconfig.path.json",
   "compilerOptions": {
-    "baseUrl": "src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -18,20 +18,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "paths": {
-      "@pages/*": ["pages/*"],
-      "@containers/*": ["containers/*"],
-      "@components/*": ["components/*"],
-      "@sections/*": ["sections/*"],
-      "@constants/*": ["constants/*"],
-      "@models/*": ["models/*"],
-      "@remotes/*": ["remotes/*"],
-      "@styles/*": ["styles/*"],
-      "@utils/*": ["utils/*"],
-      "@hooks/*": ["hooks/*"],
-      "@stores/*": ["stores/*"]
-    }
+    "jsxImportSource": "@emotion/react"
   },
   "include": ["src"]
 }

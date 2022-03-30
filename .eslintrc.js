@@ -22,21 +22,12 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:import/recommended',
   ],
+
   plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
-  settings: {
-    react: { version: 'detect' },
-    'import/resolver': {
-      typescript: {},
-    },
-  },
 
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'no-implicit-coercion': 'error',
-
-    'no-undef': 'off',
-    indent: 'off',
-    semi: 'off',
 
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -66,5 +57,12 @@ module.exports = {
         },
       },
     ],
+  },
+
+  settings: {
+    react: { version: 'detect' },
+    'import/resolver': {
+      typescript: {},
+    },
   },
 };
